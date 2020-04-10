@@ -1,0 +1,25 @@
+@startuml
+
+class MySecondClass {
++test() : void
+}
+
+MyFirstClass <|- MySecondClass
+
+interface Interface1
+interface Interface2
+
+Interface1 <|- Interface2
+
+abstract class ClassA
+abstract class ClassB
+class ClassC
+class ClassD
+
+ClassA <|- ClassB
+ClassB <|- ClassC
+
+Interface2 <|-- ClassC
+Interface1 <|-- ClassD
+
+@enduml
